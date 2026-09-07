@@ -7,6 +7,10 @@
     <title>አፊን ሸቀጣሸቀጥ | ሀዋሳ</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -17,32 +21,33 @@
         header {
             background: #111;
             color: white;
-            padding: 25px 15px;
+            padding: 30px 15px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 28px;
+            font-size: 30px;
         }
 
         header p {
-            margin: 10px 0 0;
+            margin-top: 10px;
+            font-size: 17px;
         }
 
         .hero {
-            padding: 45px 20px;
-            text-align: center;
             background: white;
+            text-align: center;
+            padding: 45px 20px;
         }
 
         .hero h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
+            font-size: 28px;
         }
 
         .hero p {
             font-size: 18px;
+            line-height: 1.6;
         }
 
         .buttons {
@@ -74,89 +79,196 @@
         }
 
         .section {
-            padding: 30px 20px;
+            padding: 35px 15px;
             text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 25px;
         }
 
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 18px;
         }
 
         .product {
             background: white;
-            width: 260px;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px #ddd;
+            width: 280px;
+            padding: 25px 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .product-icon {
+            font-size: 55px;
         }
 
         .product h3 {
-            margin-top: 0;
+            font-size: 22px;
+            margin: 12px 0;
+        }
+
+        .price {
+            color: #168c3a;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .order {
+            display: inline-block;
+            background: #229ed9;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .address {
+            background: white;
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #ddd;
         }
 
         footer {
             background: #111;
             color: white;
             text-align: center;
-            padding: 25px 10px;
+            padding: 30px 10px;
+        }
+
+        footer h3 {
+            margin-top: 0;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>🛒 አፊን ሸቀጣሸቀጥ</h1>
-        <p>ሀዋሳ</p>
-    </header>
+<header>
+    <h1>🛒 አፊን ሸቀጣሸቀጥ</h1>
+    <p>ሀዋሳ</p>
+</header>
 
-    <section class="hero">
+<section class="hero">
 
-        <h2>
-            እንኳን ወደ አፊን ሸቀጣሸቀጥ
-            በደህና መጡ!
-        </h2>
+    <h2>እንኳን ወደ አፊን ሸቀጣሸቀጥ በደህና መጡ!</h2>
 
-        <p>
-            ኦሪጅናል የሀዋሳ እና የአዲስ አበባ
-            ምርቶች በእርካሽ ዋጋ።
-        </p>
+    <p>
+        ኦሪጅናል የሀዋሳ እና የአዲስ አበባ
+        ምርቶች በእርካሽ ዋጋ።
+    </p>
 
-        <div class="buttons">
+    <div class="buttons">
 
-            <a class="btn call"
-               href="tel:0916359215">
-                📞 ይደውሉ
-            </a>
+        <a class="btn call" href="tel:0916359215">
+            📞 ይደውሉ
+        </a>
 
-            <a class="btn telegram"
+        <a class="btn telegram"
+           href="https://t.me/Afinishekete"
+           target="_blank">
+            📲 Telegram
+        </a>
+
+        <a class="btn map"
+           href="https://maps.app.goo.gl/KFh4HevmVGhDUnP49"
+           target="_blank">
+            📍 አድራሻ
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>🛍️ የሚገኙ ምርቶች</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+
+            <div class="product-icon">📒</div>
+
+            <h3>Notepad</h3>
+
+            <p>ጥራት ያለው የመጻፊያ ደብተር</p>
+
+            <div class="price">
+                💰 ዋጋ ይጠይቁ
+            </div>
+
+            <a class="order"
                href="https://t.me/Afinishekete"
                target="_blank">
-                📲 Telegram
-            </a>
-
-            <a class="btn map"
-               href="https://maps.app.goo.gl/KFh4HevmVGhDUnP49"
-               target="_blank">
-                📍 Map ላይ ያግኙን
+                🛒 Order
             </a>
 
         </div>
-    </section>
 
-    <section class="section">
 
-        <h2>🛍️ የምናቀርባቸው ምርቶች</h2>
+        <div class="product">
 
-        <div class="products">
+            <div class="product-icon">⚽</div>
 
-            <div class="product">
-                <h3>🛒 የሸቀጣሸቀጥ ምርቶች</h3>
-                <p>ጥራት ያላቸው ምርቶች</p>
+            <h3>Mini Ball</h3>
+
+            <p>ትንሽ የእግር ኳስ</p>
+
+            <div class="price">
+                💰 ዋጋ ይጠይቁ
             </div>
 
-            <div class="product">
-                <h3>⭐ ኦሪጅናል 
+            <a class="order"
+               href="https://t.me/Afinishekete"
+               target="_blank">
+                🛒 Order
+            </a>
+
+        </div>
+
+
+        <div class="product">
+
+            <div class="product-icon">🩴</div>
+
+            <h3>Sandals</h3>
+
+            <p>የተለያዩ የእግር ጫማዎች</p>
+
+            <div class="price">
+                💰 ዋጋ ይጠይቁ
+            </div>
+
+            <a class="order"
+               href="https://t.me/Afinishekete"
+               target="_blank">
+                🛒 Order
+            </a>
+
+        </div>
+
+
+        <div class="product">
+
+            <div class="product-icon">🎨</div>
+
+            <h3>Hair Color</h3>
+
+            <p>የፀጉር ቀለም</p>
+
+            <div class="price">
+                💰 ዋጋ ይጠይቁ
+            </div>
+
+            <a class="order"
+              
